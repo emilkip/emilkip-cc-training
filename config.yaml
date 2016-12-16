@@ -1,5 +1,6 @@
 variables:
-  VPC_NAME:
-      required: true
-      description: the name of the VPC
-      default: emilkip-test-vps-name
+  TEST_VAR:
+    description: "test var"
+    required: false
+    type: string
+    default: "default var"
