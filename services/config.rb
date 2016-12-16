@@ -14,7 +14,7 @@
 	coreo_aws_advisor_alert "cc-emilkip-training" do
 		action :define
 		service :elb
-		objects ["load_balancer"]
+		objects ["load_balancers"]
 		audit_objects ["load_balancer_description.health_check.interval"]
 		operators [">"]
 		alert_when [120]
