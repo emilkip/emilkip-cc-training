@@ -24,3 +24,8 @@ coreo_aws_advisor_alert "cc-emilkip-training" do
 	operators [">"]
 	alert_when [120]
 end
+
+coreo_aws_advisor_elb "cc-emilkip-training" do
+	action :advise
+	alerts ["kip"]
+end
