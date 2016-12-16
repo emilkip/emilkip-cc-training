@@ -14,6 +14,4 @@ variables:
     required: true
     type: array
     default:
-     - alert 1
-     - alert 2
-     - alert 3
+     - cc-emilkip-training
