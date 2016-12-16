@@ -1,17 +1,13 @@
 variables:
-  ELB_REGIONS:
-    description: "elb regions"
+  EC2_REGIONS:
+    description: "ec2 regions"
     required: false
     type: array
     default:
      - us-east-1
-     - us-east-2
-     - us-west-1
-     - us-west-2
-     - eu-west-1
-  ELB_ALERTS:
+  EC2_ALERTS:
     description: "Alerts array"
     required: true
     type: array
     default:
-     - cc-emilkip-training
+     - cc-emilkip-ec2-alert
