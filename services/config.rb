@@ -20,10 +20,11 @@ coreo_aws_advisor_alert "cc-emilkip-ec2-alert" do
 	description "EC2 size and encryption check for snapshot"
 	category "Inventory"
 	suggested_action "None."
+	id_map "snapshot_set.snapshot_id"
 	level "Informational"
 	objectives ["snapshots", "snapshots"]
 	audit_objects ["snapshot_set.volume_size", "snapshot_set.encrypted"]
-	operators [">", "=~"]
+	operators [">", "=="]
 	alert_when [8, false]
 end
 
