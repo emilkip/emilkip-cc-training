@@ -1,6 +1,19 @@
 variables:
-  TEST_VAR:
-    description: "test var"
+  ELB_REGIONS:
+    description: "elb regions"
     required: false
-    type: string
-    default: "default var"
+    type: array
+    default:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - eu-west-1
+  ELB_ALERTS:
+    description: "Alerts array"
+    required: true
+    type: array
+    default:
+      - alert 1
+      - alert 2
+      - alert 3
