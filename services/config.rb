@@ -36,7 +36,7 @@
 ## EC2
 coreo_aws_advisor_alert "cc-emilkip-ec2-alert" do
 	action :define
-	service :elb
+	service :ec2
 	display_name "EC2 check"
 	description "EC2 size and encryption check for snapshot"
 	category "Inventory"
