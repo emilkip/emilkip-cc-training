@@ -27,5 +27,5 @@ end
 
 coreo_aws_advisor_elb "cc-emilkip-training" do
 	action :advise
-	alerts ["kip"]
+	alerts ["paul"]
 end
