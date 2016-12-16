@@ -11,3 +11,8 @@
 	## end
 	##
 	
+	variables:
+    VPC_NAME:
+        required: true
+        description: the name of the VPC
+        default: emilkip-test-vps-name
